@@ -1253,3 +1253,47 @@ input:checked {
   --thumb-position: 100%;
   background-color: var(--track-active);
 }
+
+/* Base styles for the select element */
+select#languageSwitcher {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none; /* Removes default arrow for more control */
+  cursor: pointer;
+}
+
+/* For browsers that support ::-ms-expand (removes the default arrow in IE) */
+select#languageSwitcher::-ms-expand {
+  display: none;
+}
+
+/* Style the dropdown arrow */
+select#languageSwitcher::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
+  transform: translateY(-50%);
+}
+
+/* Dark theme */
+body.dark-theme select#languageSwitcher {
+  color: #fff;
+  border-color: #666;
+}
+
+/* Light theme */
+body.light-theme select#languageSwitcher {
+  color: #333;
+  border-color: #ccc;
+}

@@ -5,6 +5,7 @@
         blog:"Blogue",
         skills:"Habilidades",
         projects:"Projectos",
+        contact:"Contactos",
     }
  };
 export default portugueseTranslation;
