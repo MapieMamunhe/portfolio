@@ -73,7 +73,7 @@
     <script src="script.js" defer></script>
 
     <!-- Your name here -->
-    <title>Syed Mohsin's Portfolio</title>
+    <title data-i18n="title.name">Mapie Mamunhe's Portfolio</title>
   </head>
 
   <body>
@@ -119,20 +119,20 @@
       <div class="container">
         <div class="header-textbox">
           <!-- Replace with your name and job title -->
-          <h1 class="h1">
+          <h1 class="h1" data-i18n="[html]intro.me">
             <span>Hi, I'm Syed Mohsin</span>
             <span>Frontend Web Developer</span>
           </h1>
 
           <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text">
+          <p class="header-text" data-i18n="intro.goal">
             A frontend software engineer and interface designer who builds UX
             rich accessible and performant websites.
           </p>
 
           <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Hire me</a>
-            <a href="#work" class="btn btn-secondary">See my work</a>
+            <a href="#contact" class="btn btn-cta" data-i18n="intro.contact">Hire me</a>
+            <a href="#work" class="btn btn-secondary" data-i18n="intro.work">See my work</a>
           </div>
         </div>
       </div>
@@ -145,23 +145,27 @@
           <div class="logos">
             <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
             <div class="logo-group">
+
               <img
-                loading="lazy"
-                src="assets/images/trusted-by/stripe.svg"
-                alt="Ideacraft"
-                class="logo hide to-top"
-              />
+              loading="lazy"
+              src="assets/images/trusted-by/siglonet.jpeg"
+              alt="Siglonet"
+              class="logo  hide to-top"
+            />
+
 
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/datastax.svg"
-                alt="Golden grid"
+                src="assets/images/trusted-by/archtech.jpeg"
+                alt="Ideacraft"
                 class="logo"
               />
 
+             
+
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/coke.svg"
+                src="assets/images/trusted-by/acsun.png"
                 alt="Theia"
                 class="logo hide to-bottom"
               />
@@ -169,59 +173,61 @@
             <div class="logo-group">
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/gm.svg"
-                alt="General motors"
+                src="assets/images/trusted-by/workana.webp"
+                alt="Workana "
                 class="logo hide to-top"
               />
 
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/shares.svg"
-                alt="Chippy"
+                src="assets/images/trusted-by/siglonet.jpeg"
+                alt="Siglonet"
                 class="logo"
               />
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/shopify.svg"
-                alt="Shopify"
+                src="assets/images/trusted-by/imermo.png"
+                alt="IMERMO"
                 class="logo hide to-bottom"
               />
             </div>
             <div class="logo-group">
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/agency-elevation.svg"
-                alt="Agency elevation"
+                src="assets/images/trusted-by/imermo.png"
+                alt="IMERMO"
                 class="logo hide to-top"
-              /><img
+              />
+              <img
                 loading="lazy"
-                src="assets/images/trusted-by/gitlab.svg"
-                alt="Ron jones"
+                src="assets/images/trusted-by/acsun.png"
+                alt="ACSUN"
                 class="logo"
-              /><img
+              />
+              <img
                 loading="lazy"
-                src="assets/images/trusted-by/duolingo.svg"
-                alt="Mighty furniture's"
+                src="assets/images/trusted-by/its.png"
+                alt="ITS"
                 class="logo hide to-bottom"
               />
             </div>
             <div class="logo-group">
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/coyote.svg"
-                alt="Bulls eye"
+                src="assets/images/trusted-by/jobala.jpg"
+                alt="jobala"
                 class="logo hide to-top"
               />
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/astrato.svg"
-                alt="Chippy"
+                src="assets/images/trusted-by/upwork.png"
+                alt="upwork"
                 class="logo"
               />
               <img
                 loading="lazy"
-                src="assets/images/trusted-by/mercado.svg"
-                alt="Fastlane"
+                src="assets/images/trusted-by/workana.webp"
+                alt="Workana"
                 class="logo hide to-bottom"
               />
             </div>
@@ -739,8 +745,7 @@
     <script type="module" 
     
     src="js/i18n.js"></script>
-    <script>
-      
+    <script type="module" src="js/render.js">
     </script>
   </body>
 </html>
