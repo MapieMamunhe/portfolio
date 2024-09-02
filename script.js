@@ -124,8 +124,12 @@ yearEl.textContent = new Date().getFullYear();
 //Add porfolio items
 const addProject = (projectData) => {
   const workBox = document.getElementById("work-boxes");
-
-  // Create the new project HTML structure
+  const icons = {
+    github: "github.svg",
+    linkedin: "linkedin.svg",
+    twitter: "twitter.svg"
+  };
+  const iconToLoad = icons[projectData.sourceInfo] || 'default.svg';  // Create the new project HTML structure
   const newProjectHTML = `
     <div class="work-box">
       <div class="work-textbox">
@@ -135,10 +139,11 @@ const addProject = (projectData) => {
           ${projectData.technologies.map((tech) => `<li>${tech}</li>`).join('')}
         </ol>
         <div class="work-links">
+        ${projectData.sourceCodeUrl ?`
           <a href="${projectData.projectUrl}" target="_blank" rel="noopener" class="link">Explore this project</a>
           <a href="${projectData.sourceCodeUrl}" target="_blank" rel="noopener" title="Source code">
-            <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
-          </a>
+            <img src="assets/images/social-links/${iconToLoad}" alt="Link image" loading="lazy" />
+          </a>`:""}
         </div>
       </div>
       <picture class="work-img">
@@ -160,7 +165,10 @@ workEls.forEach((workEl) => {
 };
 
 // Call this function after adding new projects
-export const addProjectAndReinitialize = (projectData) => {
+export const addProjectAndReinitialize = ({title, description,technologies,sourceCodeUrl, projectUrl, sourceInfo,imageAlt, imageUrl}) => {
+  const projectData = {
+    title, description,technologies,sourceCodeUrl, projectUrl, sourceInfo,imageAlt, imageUrl
+  }
   addProject(projectData);
   reinitializeObservers();
 };
