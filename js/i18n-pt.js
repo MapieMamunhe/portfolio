@@ -42,6 +42,7 @@
             email:"Email",
             content:"Como posso ajudar?",
             send:"Enviar",
+            cv:"Baixe meu curriculum",
          }
     },
     template:{
