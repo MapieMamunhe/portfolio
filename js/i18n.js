@@ -1,4 +1,6 @@
 import portugueseTranslation from "./i18n-pt.js";
+import englishTranslation from "./i18n-en.js";
+
 const lngs = {
   pt: { nativeName: 'Portuguese' },
   en: { nativeName: 'English' },
@@ -24,12 +26,7 @@ $(function () {
       fallbackLng: 'en',
       resources: {
         en: {
-          translation: {
-            intro: {
-              title: 'Landing Page',
-              subTitle: 'Some subtitle'
-            }
-          }
+          translation: englishTranslation
         },
         pt: {
           translation: 
