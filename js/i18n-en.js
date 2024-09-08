@@ -1,51 +1,50 @@
 const englishTranslation = {
   title: {
-    name: 'Mapie Mamunhe Portfolio',
+    name: "Mapie Mamunhe Portfolio",
   },
-  navigation: {
-    home: 'Home',
-    work: 'Work',
-    blog: 'Blog',
-    skills: 'Skills',
-    projects: 'Projects',
-    contact: 'Contact',
+  nav: {
+    home: "Home",
+    work: "Work",
+    blog: "Articles",
+    skills: "Skills",
+    projects: "Projects",
+    contact: "Contact",
   },
-  introduction: {
-    greeting: 'Hi, I\'m Mapie Mamunhe',
-    subtitle: 'Software Engineer',
-    goal: 'I develop solutions for banks, insurance companies, retail, or any other entity.',
-    callToAction: 'Contact me!',
-    work: 'My work',
+  intro: {
+    me:
+      "<span>Hi! I am Mapie Mamunhe </span>" +
+      "<span> Software Engineer!</span>",
+    goal: "A proactive software engineer, developing tailored solutions for Banking, Insurance, Retail, and even for individual entities!",
+    contact: "Contact me!",
+    work: "My Work",
   },
-  tools: {
-    title: 'Tools',
+  toolkit: {
+    title: "Tools",
   },
-  projects: {
-    title: 'Projects',
+  work: {
+    title: "Projects",
   },
   articles: {
-    title: 'Articles',
+    title: "Articles",
   },
-  inspiration: {
-    title: 'Inspiration',
+  trusted: {
+    title: "I've Influenced",
   },
-  about: {
-    title: 'About',
-    available: 'Available for hire',
-    description: 'I develop solutions in dynamic environments with teams of various sizes. I focus on delivering high-quality solutions in an agile environment.',
-    hobbies: 'I enjoy doing things on my own, from developing full-stack applications to cooking a delicious lasagna',
+  hire: {
+    title: "Say Hi!",
+    available: "Available for proposals",
+    description: `As a Software Engineer, I am capable of producing solutions proactively in a dynamic and collaborative environment with cross-functional teams of varying sizes. Focused on delivering high-quality solutions in an agile environment!`,
+    hobbies: `I am passionate about everything that can be created through my own skills, from a fullstack application to a delicious plate of Lasagna 🤤`,
     form: {
-      name: 'Name',
-      email: 'Email',
-      content: 'How can I help?',
-      send: 'Send',
-      cv: 'Download my resume',
+      name: "Name",
+      email: "Email",
+      content: "How can I help?",
+      send: "Send",
+      cv: "Download my resume",
     },
   },
-  footer: {
-    source: 'View page source',
+  template: {
+    find: "Find the source code for this page",
   },
 };
-
 export default englishTranslation;
-

@@ -1297,3 +1297,56 @@ body.light-theme select#languageSwitcher {
   color: #333;
   border-color: #ccc;
 }
+
+.language-switcher {
+  --switcher-bg: #000;
+  --switcher-text: #fff;
+  --switcher-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --switcher-box-shadow-hover: 0 6px 14px rgba(0, 0, 0, 0.6);
+  --switcher-border: #ccc;
+  --switcher-border-hover: #888;
+  --switcher-font: Arial, sans-serif;
+  --switcher-padding: 12px 16px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--switcher-bg);
+  color: var(--switcher-text);
+  border-radius: 8px;
+  padding: var(--switcher-padding);
+  box-shadow: var(--switcher-shadow);
+  font-family: var(--switcher-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-switcher select {
+  --select-bg: #fff;
+  --select-text: #000;
+  --select-border: var(--switcher-border);
+  --select-border-hover: var(--switcher-border-hover);
+  --select-padding: 8px;
+  --select-font-size: 14px;
+
+  background-color: var(--select-bg);
+  color: var(--select-text);
+  border: 1px solid var(--select-border);
+  border-radius: 4px;
+  padding: var(--select-padding);
+  font-size: var(--select-font-size);
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.language-switcher select:hover {
+  background-color: #f0f0f0;
+  border-color: var(--select-border-hover);
+}
+
+.language-switcher:hover {
+  background-color: #222;
+  box-shadow: var(--switcher-box-shadow-hover);
+}
