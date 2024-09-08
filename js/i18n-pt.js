@@ -5,7 +5,7 @@
     nav:{
         home:"Home",
         work:"Trabalho",
-        blog:"Blogue",
+        blog:"Artigos",
         skills:"Habilidades",
         projects:"Projectos",
         contact:"Contactos",
@@ -18,8 +18,34 @@
         contact:"Contacte-me!",
         work:"Meus Trabalhos",
     },
+    toolkit:{
+        title:"Ferramentas",
+    },
+
+    work:{
+        title:"Projectos",
+    },
+    articles:{
+        title:"Artigos",
+    },
     trusted:{
-        names:"Influenciei"
+        title:"Influenciei"
+    },
+    hire:{
+        title:"Diga Oi!",
+        available:"Disponível para propostas",
+        description:`Como Engenheiro de Software, sou capaz de produzir soluções, proactivamente em ambiente dinâmico e de colaraboração com equipes transversais
+         de tamanho variável. Focado em produzir soluções de alta qualidade em ambiente ágil!`,
+         hobbies:`Sou um entusiasta por tudo que é possível produzir por habilidades próprias, desde um aplicativo fullstack, até um prato delicioso de Lasanha🤤`,
+         form:{
+            name:"Nome",
+            email:"Email",
+            content:"Como posso ajudar?",
+            send:"Enviar",
+         }
+    },
+    template:{
+        find:"Encontre o codigo fonte desta pagina",
     }
 
  };

@@ -55,7 +55,7 @@
 <!-- Update favicon href attribute with image of yourself -->
     <link
       rel="shortcut icon"
-      href="assets/images/favicons.png"
+      href="assets/images/favicons.ico"
       type="image/png"
     />
 
@@ -107,8 +107,8 @@
         </li> -->
           <li class="nav-item"><a href="#" data-i18n="nav.Home">Home</a></li>
           <li class="nav-item"><a href="#work" data-i18n="nav.work">My Work</a></li>
-          <li class="nav-item"><a href="#blog" data-i18n="nav.skills">See Blog</a></li>
-          <li class="nav-item"><a href="#skills" data-i18n="nav.projects">My Skills</a></li>
+          <li class="nav-item"><a href="#blog" data-i18n="nav.blog">See Blog</a></li>
+          <li class="nav-item"><a href="#skills" data-i18n="nav.skills">See Blog</a></li>
           <li class="nav-item">
             <a href="#contact" data-focused="last-focused" data-i18n="nav.contact">Contact</a>
           </li>
@@ -140,7 +140,7 @@
     <main>
       <section class="client">
         <div class="container">
-          <h2 class="h2">Trusted by</h2>
+          <h2 class="h2" data-i18n="trusted.title"></h2>
           <div class="logos">
             <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
             <div class="logo-group">
@@ -236,7 +236,7 @@
 
       <section class="work">
         <div class="container">
-          <h2 class="h2" id="work">Selected Work</h2>
+          <h2 class="h2" id="work" data-i18n="work.title">Selected Work</h2>
           <div id="work-boxes" class="work-boxes">
           </div>
         </div>
@@ -246,7 +246,7 @@
 
       <section class="article">
         <div class="container">
-          <h2 class="h2" id="blog">My Articles</h2>
+          <h2 class="h2" id="blog" data-i18n="articles.title">My Articles</h2>
           <div class="article-boxes">
            
           </div>
@@ -257,7 +257,7 @@
 
       <section class="skills">
         <div class="container">
-          <h2 class="h2" id="skills">My Toolkit</h2>
+          <h2 class="h2" id="skills" data-i18n="toolkit.title">My Toolkit</h2>
           <div class="skills-imgs">
                 <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
                 <img src="assets/images/skills/php.png" alt="PHP" class="skills-img" loading="lazy" title="React">
@@ -281,7 +281,7 @@
 
       <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
 
-      <section>
+      <!-- <section>
         <h2 class="h2">Testimonials</h2>
         <div class="container">
           <ol class="testimonials">
@@ -396,57 +396,69 @@
             </li>
           </ol>
         </div>
-      </section>
+      </section> -->
 
       <section class="contact">
         <div class="container">
-          <h2 class="h2" id="contact">Send Message</h2>
+          <h2 class="h2" id="contact" data-i18n="hire.title"></h2>
           <div class="contact-content">
             <div class="contact-textbox">
               <!-- Please comment this component if you're not available for hire -->
               <strong href="#" class="hire-alert">
                 <span class="indicator"></span>
-                Available for hire
+                <span data-i18n="hire.available"></span>
               </strong>
-              <p class="contact-text">
-                As a software engineer, I construct web interfaces and design
-                systems with a special love for accessibility and the
-                performance. I tend to code things from scratch and enjoy
-                bringing ideas to life.
+              <p class="contact-text" data-i18n="hire.description">
               </p>
-              <p class="contact-text">
-                I'm also an open-source developer, and in my spare time, I do
-                digital art with my iPad Pro.
+              <p class="contact-text" data-i18n="hire.hobbies">
+            
               </p>
               <!-- Replace src with your signatures and name -->
-              <img
+              <!-- <img
                 src="assets/images/signatures.png"
                 alt="Syed Mohsin"
                 class="signatures"
                 loading="lazy"
-              />
+              /> -->
             </div>
-            <form action="#" class="contact-form" netlify>
+            <form id="contactForm">
               <div class="form-field">
-                <label for="name">Name</label>
+                <label for="name" data-i18n="hire.form.name">Name</label>
                 <input type="text" name="name" id="name" required />
               </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  inputmode="email"
-                />
+            
+              <!-- <div class="form-field">
+                <label for="email" data-i18n="hire.form.email">Email</label>
+                <input type="email" name="email" id="email" required />
               </div>
+             -->
               <div class="form-field">
-                <label for="message">How can I help you?</label>
+                <label for="message" data-i18n="hire.form.content">Message</label>
                 <textarea name="message" id="message" required></textarea>
               </div>
-              <button type="submit" class="btn btn-cta">Send</button>
+            
+              <button type="submit" class="btn btn-cta" data-i18n="hire.form.send">Send</button>
             </form>
+            
+            <script>
+              document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                var name = document.getElementById('name').value;
+                // var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+                
+                // Create the mailto link with formatted email content
+                var mailtoLink = 'mailto:mmamunhe@gmail.com'
+                  + '?subject=' + encodeURIComponent('Contact Form Submission')
+                  + '&body=' + encodeURIComponent('Name: ' + name  + '\nMessage: ' + message);
+                
+                // Open the mail client
+                window.location.href = mailtoLink;
+              });
+            </script>
+            
+            
           </div>
         </div>
       </section>
@@ -459,7 +471,7 @@
           <nav>
             <ol class="footer-links">
               <li class="footer-link">
-                <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                <a title="GitHub" href="https://github.com/MapieMamunhe" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/github.svg"
@@ -467,35 +479,22 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Codepen" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/codepen.svg"
-                    alt="Codepen"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/syed-mohisn-raza-393177262/" target="_blank" rel="noopener"
+                <a title="Linkedin" href="https://www.linkedin.com/in/mamunhe" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/linkedin.svg"
                     alt="Linkedin"
                 /></a>
               </li>
-              <li class="footer-link">
-                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/twitter.svg"
-                    alt="Twitter"
-                /></a>
-              </li>
             </ol>
           </nav>
           <p class="footer-text">
-            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin.</a>
-          </p>
+            &copy; <span>2024</span>
+            <span data-i18n="template.find">
 
+            </span>
+             <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin"> aqui</a>
+          </p>
         </div>
       </div>
     </footer>
