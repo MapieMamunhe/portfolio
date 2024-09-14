@@ -406,11 +406,10 @@
                 <span class="indicator"></span>
                 <span data-i18n="hire.available"></span>
               </strong>
-              <p class="contact-text" data-i18n="hire.description">
-              </p>
-              <p class="contact-text" data-i18n="hire.hobbies">
-            
-              </p>
+                <p class="contact-text" data-i18n="hire.description">
+                </p>
+                <p class="contact-text" data-i18n="hire.hobbies">
+                </p>
               <!-- Replace src with your signatures and name -->
               <!-- <img
                 src="assets/images/signatures.png"
@@ -419,28 +418,30 @@
                 loading="lazy"
               /> -->
             </div>
-            <form id="contactForm">
-              <div class="form-field">
-                <label for="name" data-i18n="hire.form.name">Name</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-            
-              <div class="form-field">
-                <label for="email" data-i18n="hire.form.email">Email</label>
-                <input type="email" name="email" id="email"  />
-              </div>
-            
-              <div class="form-field">
-                <label for="message" data-i18n="hire.form.content">Message</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-            
-              <div class="form-field justify-content-between">
-
-                <button type="submit" class="btn btn-cta" data-i18n="hire.form.send">Send</button>
-                <a href="./assets/Mapie.Mamunhe.International.pdf" target="_blank"  class="btn btn-secondary" data-i18n="hire.form.cv">Download resume</a>
-              </div>
-            </form>
+            <div class="align-items-center ">
+              <form class="pt-4" id="contactForm">
+                <div class="form-field">
+                  <label for="name" data-i18n="hire.form.name">Name</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+              
+                <div class="form-field">
+                  <label for="email" data-i18n="hire.form.email">Email</label>
+                  <input type="email" name="email" id="email"  />
+                </div>
+              
+                <div class="form-field">
+                  <label for="message" data-i18n="hire.form.content">Message</label>
+                  <textarea name="message" id="message" required></textarea>
+                </div>
+              
+                <div class="form-field justify-content-between">
+  
+                  <button type="submit" class="btn btn-cta" data-i18n="hire.form.send">Send</button>
+                  <a href="./assets/Mapie.Mamunhe.International.pdf" target="_blank"  class="btn btn-secondary" data-i18n="hire.form.cv">Download resume</a>
+                </div>
+              </form>
+            </div>
             
             <script>
               document.getElementById('contactForm').addEventListener('submit', function(e) {
