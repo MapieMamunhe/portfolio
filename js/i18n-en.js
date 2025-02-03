@@ -14,7 +14,7 @@ const englishTranslation = {
     me:
       "<span>Hi! I am Mapie Mamunhe </span>" +
       "<span> Software Engineer!</span>",
-    goal: "A proactive software engineer, developing tailored solutions for Banking, Insurance, Retail, and even for individual entities!",
+    goal: "A teacher, freelancer and software engineer that developes tailored solutions for Banking, Insurance, Retail, and even for individual entities!",
     contact: "Contact me!",
     work: "My Work",
   },

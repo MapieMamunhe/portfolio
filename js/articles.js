@@ -17,8 +17,8 @@ const articles = [
       // imageAlt: "Internet Prices in Mozambique"
     },
     {
-      title: ` 💻Lições da Engenharia de Software para a Política🕴🤵`,
-      description:"Embora eu evite discutir política neste espaço, achei relevante trazer um paralelo entre um artigo da Radio Kuia Bue e a área de #Engenharia de #Software, destacando três conceitos essenciais:",
+      title: ` 💻Lessons from Software Engineering for Politics🕴🤵`,
+      description:"Although I avoid discussing politics in this space, I found it relevant to bring a parallel between an article from Radio Kuia Bue and the area of ​​#Software #Engineering, highlighting three essential concepts:",
        link: "https://www.linkedin.com/posts/mamunhe_equipeadg-activity-7286985868488101888-VazL?utm_source=social_share_send&utm_medium=member_desktop_web",
       reactionCount: 22,
     //  imageUrl: "assets/images/articles/internet/hero.png",

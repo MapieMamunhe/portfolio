@@ -14,7 +14,7 @@
         me:
         "<span>Oi! Eu sou Mapie Mamunhe </span>"
         +"<span> Engenheiro de Software!</span>",
-        goal:"Um engenheiro de software proactivo, que desenvolve soluções acomodadas para a Banca, Seguradoras, retalho ou até mesmo para entidades particulares!",
+        goal:"Um engenheiro de software, professor e freelancer que desenvolve soluções acomodadas para a Banca, Seguradoras, retalho ou até mesmo para entidades particulares!",
         contact:"Contacte-me!",
         work:"Meus Trabalhos",
     },
