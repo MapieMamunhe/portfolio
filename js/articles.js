@@ -15,7 +15,23 @@ const articles = [
       reactionCount: 34,
     //  imageUrl: "assets/images/articles/internet/hero.png",
       // imageAlt: "Internet Prices in Mozambique"
-    }
+    },
+    {
+      title: ` 💻Lições da Engenharia de Software para a Política🕴🤵`,
+      description:"Embora eu evite discutir política neste espaço, achei relevante trazer um paralelo entre um artigo da Radio Kuia Bue e a área de #Engenharia de #Software, destacando três conceitos essenciais:",
+       link: "https://www.linkedin.com/posts/mamunhe_equipeadg-activity-7286985868488101888-VazL?utm_source=social_share_send&utm_medium=member_desktop_web",
+      reactionCount: 22,
+    //  imageUrl: "assets/images/articles/internet/hero.png",
+      // imageAlt: "Internet Prices in Mozambique"
+    },
+    {
+      title: `Let's Talk About Free Tier!`,
+      description:"Some time ago, I received a billing invoice for a VPS I used for one of my personal projects. Totally unexpected, I should say, because up until that moment, I was under the impression that I was benefiting from the platform's Free Tier.",
+       link: "https://www.linkedin.com/posts/mamunhe_equipeadg-activity-7286985868488101888-VazL?utm_source=social_share_send&utm_medium=member_desktop_web",
+      reactionCount: 8,
+    //  imageUrl: "assets/images/articles/internet/hero.png",
+      // imageAlt: "Internet Prices in Mozambique"
+    },
   ];
   
   // Function to create an article element
