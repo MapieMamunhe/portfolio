@@ -102,7 +102,7 @@ function addArticles(articles) {
 articles.forEach(article => {
 const articleElement = createArticleElement(article);
 articleContainer.appendChild(articleElement);
-console.log('Article:', article.title, article);
+console.log('Articl:', article.title, article);
 
 });
 }
