@@ -766,6 +766,7 @@ body.dark .work-links img {
 
 .article-box {
   flex-basis: 31%;
+  margin-bottom: 3.5%;
   border: 1px solid var(--border);
   padding: var(--gutter-medium) var(--gutter-small);
   border-radius: var(--gutter-nano);
@@ -803,6 +804,9 @@ body.dark .work-links img {
     justify-content: center;
     gap: 4%;
   }
+    .article-box {
+    flex-basis: 48%;
+  }
 
   .article-box:nth-of-type(2),
   .article-box:nth-of-type(3) {
@@ -820,7 +824,9 @@ body.dark .work-links img {
   .article-box:last-child {
     flex-basis: 100%;
   }
-
+ .article-box {
+    flex-basis: 100%;
+  }
   .featured-article {
     margin-block-end: 0;
   }
